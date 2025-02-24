@@ -39,6 +39,9 @@ dependencies {
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.database)
 
+    compileOnly(libs.lombok)
+    annotationProcessor(libs.lombok)
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
