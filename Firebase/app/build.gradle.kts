@@ -33,14 +33,14 @@ android {
 }
 
 dependencies {
-    implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.analytics)
-
-    implementation(libs.firebase.analytics)
-    implementation(libs.firebase.database)
-
     compileOnly(libs.lombok)
     annotationProcessor(libs.lombok)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.auth)
 
     implementation(libs.appcompat)
     implementation(libs.material)
